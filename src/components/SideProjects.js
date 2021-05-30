@@ -69,7 +69,7 @@ export default function SideProjects() {
           <div className="flex flex-wrap -m-4">
             {projects.map((project) => {
               return (
-                <div className="p-4 lg:w-1/3 ">
+                <div key={project.key} className="p-4 lg:w-1/3 ">
                   <div className="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative bg-coolGray-900 shadow-lg">
                     <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">
                       {project.category}

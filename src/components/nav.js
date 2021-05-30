@@ -12,7 +12,7 @@ export default function Nav() {
               aria-label="Back to homepage"
               className="flex items-center p-2"
             >
-              <img src={logo} className="w-8 h-8 text-violet-400" />
+              <img src={logo} className="w-8 h-8 text-violet-400" alt="" />
             </a>
             <ul className="items-stretch hidden space-x-3 lg:flex">
               <li className="flex">
