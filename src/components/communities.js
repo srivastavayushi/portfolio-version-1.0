@@ -5,15 +5,10 @@ import styled from "styled-components";
 
 const Tab = styled.button`
   cursor: pointer;
-  opacity: 0.6;
-  border: 0;
-  ${({ active }) =>
-    active &&
-    `
-    border-bottom: 2px solid #8B5CF6;
-    opacity:1;
-    background-color : #111827;
-  `}
+  opacity: ${props => (props.active)? "1":"0.6"};
+  opacity: ${props => (props.active ? "1" : "0.6")}
+  border-bottom: ${props=> (props.active) ? "2px solid #8B5CF6":"0"};
+  background-color: ${props => (props.active) ? "#111827":""};
 `;
 
 export default function Communities() {
@@ -59,7 +54,7 @@ export default function Communities() {
               return (
                 <Tab
                   key={community.id}
-                  active={active === community}
+                  active={active === community.id}
                   onClick={() => setActive(community)}
                 >
                   <a className="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium  inline-flex items-center leading-none  text-white tracking-wider rounded-t">
