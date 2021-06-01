@@ -62,10 +62,7 @@ export default function Communities() {
                   active={active === community}
                   onClick={() => setActive(community)}
                 >
-                  <a
-                    className="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium  inline-flex items-center leading-none  text-white tracking-wider rounded-t"
-                    href="/"
-                  >
+                  <a className="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium  inline-flex items-center leading-none  text-white tracking-wider rounded-t">
                     <img
                       src={community.image}
                       alt=" "

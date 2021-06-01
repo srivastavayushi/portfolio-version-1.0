@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.svg";
+import Pdf from '../assets/OS.pdf';
 
 export default function Nav() {
   return (
@@ -50,9 +51,12 @@ export default function Nav() {
             </ul>
           </div>
           <div className="items-center flex-shrink-0 hidden lg:flex">
+          <a href = {Pdf} target = "_blank" rel="noreferrer">
             <button className="px-8 py-3 font-semibold rounded border-2 border-violet-400 text-violet-400">
               Resume
             </button>
+          </a>
+            
           </div>
           <button className="p-4 lg:hidden">
             <svg
