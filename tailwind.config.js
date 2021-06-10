@@ -32,6 +32,12 @@ module.exports = {
       gray: colors.gray,
       blueGray: colors.blueGray,
       coolGray: colors.coolGray,
+      language: {
+        react: "#61DBFB",
+        redux: "#764abc",
+        node: "#3C873A",
+        git: "#f34f29",
+      },
     },
   },
   variants: {

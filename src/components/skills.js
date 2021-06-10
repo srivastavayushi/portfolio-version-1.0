@@ -1,7 +1,15 @@
 import React from "react";
-import Cpp from "../assets/cpp.svg";
-import Java from "../assets/java.svg";
-import JavaScript from "../assets/javascript.svg";
+import redux from "../assets/redux.svg";
+import express from "../assets/express.svg";
+import npm from "../assets/npm.svg";
+import mongo from "../assets/mongo.svg";
+import Bootstrap from "../assets/bootstrap.svg";
+import Azure from "../assets/azure.svg";
+import Cpp from "../assets/icons8-c++.svg";
+import Java from "../assets/icons8-java.svg";
+import JavaScript from "../assets/icons8-javascript.svg";
+import html from "../assets/icons8-html-5.svg";
+import css from "../assets/icons8-css3.svg";
 
 export default function Skills() {
   const skills = [
@@ -12,8 +20,8 @@ export default function Skills() {
     },
     {
       key: 2,
-      language: "Java",
-      icon: Java,
+      language: "CSS",
+      icon: css,
     },
     {
       key: 3,
@@ -22,52 +30,11 @@ export default function Skills() {
     },
     {
       key: 4,
-      language: "JavaScript",
-      icon: JavaScript,
+      language: "HTML",
+      icon: html,
     },
   ];
-  // const frameworks = [
-  //   {
-  //     name: "ReactJs",
-  //     icon: "react",
-  //     onHover: "text-purple-600",
-  //   },
-  //   {
-  //     name: "ReactJs",
-  //     icon: "node",
-  //     onHover: "text-purple-600",
-  //   },
-  //   {
-  //     name: "ReactJs",
-  //     icon: "node",
-  //     onHover: "text-purple-600",
-  //   },
-  //   {
-  //     name: "ReactJs",
-  //     icon: "bootstrap",
-  //     onHover: "text-purple-600",
-  //   },
-  //   {
-  //     name: "ReactJs",
-  //     icon: "node",
-  //     onHover: "text-purple-600",
-  //   },
-  //   {
-  //     name: "ReactJs",
-  //     icon: "npm",
-  //     onHover: "text-purple-600",
-  //   },
-  //   {
-  //     name: "ReactJs",
-  //     icon: "node",
-  //     onHover: "text-purple-600",
-  //   },
-  //   {
-  //     name: "ReactJs",
-  //     icon: "node",
-  //     onHover: "text-purple-600",
-  //   },
-  // ];
+
   return (
     <>
       <section className="p-6 my-6 bg-coolGray-800 text-coolGray-100">
@@ -80,10 +47,10 @@ export default function Skills() {
           {skills.map((skill) => {
             return (
               <div
-                className="flex p-4 space-x-4 rounded-lg md:space-x-6 bg-coolGray-900 text-coolGray-100"
+                className="flex p-2 space-x-4 rounded-lg md:space-x-6 bg-coolGray-900 text-coolGray-100"
                 key={skill.key}
               >
-                <div className="flex justify-center p-2 align-middle rounded-lg sm:p-4 bg-violet-400">
+                <div className="flex justify-center  align-middle rounded-lg sm:p-4 ">
                   <img src={skill.icon} alt="" />
                 </div>
                 <div className="flex flex-col justify-center align-middle">
@@ -102,22 +69,33 @@ export default function Skills() {
         <div className="container p-6 mx-auto space-y-6 text-center lg:p-8 lg:space-y-8">
           <h2 className="text-3xl font-bold">Libraries / Frameworks</h2>
           <div className="flex flex-wrap justify-center lg:justify-between">
-            {/* {frameworks.map((framework) => {
-              var str1 =
-                "fa-3x text-coolGray-400 mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 ";
-              var str2 = `${framework.name} hover:${framework.onHover}`;
-              var res = str1.concat(str2);
-              return <i classNameName={res} />;
-            })} */}
-            <i className="fab fa-react fa-3x text-coolGray-400 mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 hover:text-purple-600" />
-            <i className="fab fa-node-js fa-3x text-coolGray-400 mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 hover:text-purple-600" />
-            <i className="fab fa-node-js fa-3x text-coolGray-400 mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 hover:text-purple-600" />
-            <i className="fab fa-bootstrap fa-3x text-coolGray-400 mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 hover:text-purple-600" />
-            <i className="fab fa-node-js fa-3x text-coolGray-400 mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 hover:text-purple-600" />
-            <i className="fab fa-npm fa-3x text-coolGray-400 mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 hover:text-purple-600" />
-            <i className="fab fa-node-js fa-3x text-coolGray-400 mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 hover:text-purple-600" />
-            <i className="fab fa-node-js fa-3x text-coolGray-400 mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 hover:text-purple-600" />{" "}
-            <i className="fab fa-node-js fa-3x text-coolGray-400 mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 hover:text-purple-600" />{" "}
+            <i className="fab fa-react fa-3x text-language-react mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 " />
+            <i className="fab fa-node-js fa-3x text-language-node mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 " />
+            <img
+              src={redux}
+              className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
+            />
+            <img
+              src={Bootstrap}
+              className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
+            />
+            <img
+              src={mongo}
+              className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
+            />
+            <img
+              src={npm}
+              className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
+            />
+            <img
+              src={express}
+              className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
+            />
+            <img
+              src={Azure}
+              className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
+            />
+            <i className="fab fa-git-alt fa-3x text-language-git mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 " />{" "}
           </div>
         </div>
       </section>
