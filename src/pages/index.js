@@ -14,7 +14,6 @@ import Footer from "../components/footer";
 export default function Index() {
   return (
     <div>
-      <Nav />
       <Home />
       <About />
       <Skills />

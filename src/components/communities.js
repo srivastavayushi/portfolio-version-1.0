@@ -5,10 +5,10 @@ import styled from "styled-components";
 
 const Tab = styled.button`
   cursor: pointer;
-  opacity: ${props => (props.active)? "1":"0.6"};
-  opacity: ${props => (props.active ? "1" : "0.6")}
-  border-bottom: ${props=> (props.active) ? "2px solid #8B5CF6":"0"};
-  background-color: ${props => (props.active) ? "#111827":""};
+  opacity: ${(props) => (props.active ? "1" : "0.6")};
+  opacity: ${(props) => (props.active ? "1" : "0.6")}
+  border-bottom: ${(props) => (props.active ? "2px solid #8B5CF6" : "0")};
+  background-color: ${(props) => (props.active ? "#111827" : "")};
 `;
 
 export default function Communities() {

@@ -2,7 +2,6 @@ import React from "react";
 import profile from "../assets/profile.svg";
 import github from "../assets/github.svg";
 
-
 export default function Home() {
   return (
     <>
