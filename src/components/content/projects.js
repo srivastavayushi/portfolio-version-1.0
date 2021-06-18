@@ -37,3 +37,66 @@ export const projects = [
     deployOn: "https://expense-tracker-full-stack.herokuapp.com/",
   },
 ];
+
+export const sideProjects = [
+  {
+    key: 1,
+    category: "ReactJs Node.js Express MongoDB",
+    name: "Relaxer Application",
+    about:
+      "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+    github: "https://github.com/srivastavayushi/relaxer-app",
+    deployOn: "https://relaxer-project.netlify.app/",
+    video: image,
+  },
+  {
+    key: 2,
+    category: "ReactJs Node.js Express MongoDB",
+    name: "Relaxer Application",
+    about:
+      "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+    github: "https://github.com/srivastavayushi/relaxer-app",
+    deployOn: "https://relaxer-project.netlify.app/",
+    video: image,
+  },
+  {
+    key: 3,
+    category: "ReactJs Node.js Express MongoDB",
+    name: "Relaxer Application",
+    about:
+      "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+    github: "https://github.com/srivastavayushi/relaxer-app",
+    deployOn: "https://relaxer-project.netlify.app/",
+    video: image,
+  },
+  {
+    key: 4,
+    category: "ReactJs Node.js Express MongoDB",
+    name: "Relaxer Application",
+    about:
+      "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+    github: "https://github.com/srivastavayushi/relaxer-app",
+    deployOn: "https://relaxer-project.netlify.app/",
+    video: image,
+  },
+  {
+    key: 5,
+    category: "ReactJs Node.js Express MongoDB",
+    name: "Relaxer Application",
+    about:
+      "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+    github: "https://github.com/srivastavayushi/relaxer-app",
+    deployOn: "https://relaxer-project.netlify.app/",
+    video: image,
+  },
+  {
+    key: 6,
+    category: "ReactJs Node.js Express MongoDB",
+    name: "Relaxer Application",
+    about:
+      "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+    github: "https://github.com/srivastavayushi/relaxer-app",
+    deployOn: "https://relaxer-project.netlify.app/",
+    video: image,
+  },
+];

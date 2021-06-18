@@ -28,6 +28,9 @@ module.exports = {
           light: "#ffffff",
         },
       },
+      project: {
+        yellow: "#EFCB95",
+      },
 
       language: {
         react: "#61DBFB",

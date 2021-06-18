@@ -7,7 +7,7 @@ import Pdf from "../assets/OS.pdf";
 export default function Nav() {
   return (
     <>
-      <header className="px-4 text-basic-blue  bg-basic-gray fixed w-screen ">
+      <header className="px-4 text-basic-blue bg-basic-gray fixed w-screen z-50 pt-4">
         <div className="container flex justify-between h-16 mx-auto">
           <div className="flex">
             <Link to="/#home" className="flex items-center p-2">

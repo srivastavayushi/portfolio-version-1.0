@@ -1,62 +1,7 @@
 import React from "react";
+import { sideProjects } from "./content/projects";
 
 export default function SideProjects() {
-  const projects = [
-    {
-      key: 1,
-      category: "ReactJs Node.js Express MongoDB",
-      name: "Relaxer Application",
-      about:
-        "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
-      github: "https://github.com/srivastavayushi/relaxer-app",
-      deployOn: "https://relaxer-project.netlify.app/",
-    },
-    {
-      key: 2,
-      category: "ReactJs Node.js Express MongoDB",
-      name: "Relaxer Application",
-      about:
-        "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
-      github: "https://github.com/srivastavayushi/relaxer-app",
-      deployOn: "https://relaxer-project.netlify.app/",
-    },
-    {
-      key: 3,
-      category: "ReactJs Node.js Express MongoDB",
-      name: "Relaxer Application",
-      about:
-        "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
-      github: "https://github.com/srivastavayushi/relaxer-app",
-      deployOn: "https://relaxer-project.netlify.app/",
-    },
-    {
-      key: 4,
-      category: "ReactJs Node.js Express MongoDB",
-      name: "Relaxer Application",
-      about:
-        "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
-      github: "https://github.com/srivastavayushi/relaxer-app",
-      deployOn: "https://relaxer-project.netlify.app/",
-    },
-    {
-      key: 5,
-      category: "ReactJs Node.js Express MongoDB",
-      name: "Relaxer Application",
-      about:
-        "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
-      github: "https://github.com/srivastavayushi/relaxer-app",
-      deployOn: "https://relaxer-project.netlify.app/",
-    },
-    {
-      key: 6,
-      category: "ReactJs Node.js Express MongoDB",
-      name: "Relaxer Application",
-      about:
-        "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
-      github: "https://github.com/srivastavayushi/relaxer-app",
-      deployOn: "https://relaxer-project.netlify.app/",
-    },
-  ];
   return (
     <div>
       <section className=" body-font" id="sideprojects">
@@ -67,16 +12,17 @@ export default function SideProjects() {
             </h2>
           </div>
           <div className="flex flex-wrap -m-4">
-            {projects.map((project) => {
+            {sideProjects.map((project) => {
               return (
                 <div key={project.key} className="p-4 lg:w-1/3 ">
-                  <div className="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative bg-coolGray-900 shadow-lg">
+                  <div className="h-full bg-project-yellow  bg-opacity-30 hover:bg-opacity-80 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative shadow-lg  hover:-translate-y-1 transform transition">
                     <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">
                       {project.category}
                     </h2>
                     <h1 className="title-font sm:text-2xl text-xl font-medium text-white mb-3">
                       {project.name}
                     </h1>
+
                     <p className="leading-relaxed mb-3">{project.about}</p>
                     <a
                       className="text-purple-400 inline-flex items-center"

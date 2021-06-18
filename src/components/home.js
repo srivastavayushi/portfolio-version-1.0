@@ -2,11 +2,12 @@ import React from "react";
 import profile from "../assets/profile.svg";
 import github from "../assets/github.svg";
 import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 
 export default function Home() {
   return (
     <div id="home">
-      <section className="text-basic-blue">
+      <section className="text-basic-blue pt-24 ">
         <div className="container mx-auto flex flex-col justify-center p-6 sm:py-12 lg:py-24 lg:flex-row lg:justify-between ">
           <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
             <motion.h1
@@ -34,7 +35,19 @@ export default function Home() {
               >
                 &nbsp;Ayushi
               </motion.span>
-              &nbsp;kkkkk kkkkkkkk
+              &nbsp;{" "}
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+
+                    .typeString("Developer")
+
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("Programmer")
+                    .start();
+                }}
+              />
             </motion.h1>
             <motion.p
               className="mt-6 mb-8 text-lg sm:mb-12"
