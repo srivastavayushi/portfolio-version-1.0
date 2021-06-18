@@ -1,6 +1,8 @@
 import image from "../../assets/expense-tracker-1.png";
 import projectOne from "../../assets/videos/dev-connector.mp4";
 import projectTwo from "../../assets/videos/expense-tracker.mp4";
+import projectThree from "../../assets/videos/equicode-site.mov";
+import relaxer from "../../assets/sideProjects/relaxer.png";
 
 export const projects = [
   {
@@ -32,7 +34,7 @@ export const projects = [
     about:
       "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
     image: image,
-    video: projectOne,
+    video: projectThree,
     github: "https://github.com/srivastavayushi/Expense-Tracker",
     deployOn: "https://expense-tracker-full-stack.herokuapp.com/",
   },
@@ -47,7 +49,7 @@ export const sideProjects = [
       "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
     github: "https://github.com/srivastavayushi/relaxer-app",
     deployOn: "https://relaxer-project.netlify.app/",
-    video: image,
+    image: relaxer,
   },
   {
     key: 2,
@@ -57,7 +59,7 @@ export const sideProjects = [
       "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
     github: "https://github.com/srivastavayushi/relaxer-app",
     deployOn: "https://relaxer-project.netlify.app/",
-    video: image,
+    image: relaxer,
   },
   {
     key: 3,
@@ -67,7 +69,7 @@ export const sideProjects = [
       "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
     github: "https://github.com/srivastavayushi/relaxer-app",
     deployOn: "https://relaxer-project.netlify.app/",
-    video: image,
+    image: relaxer,
   },
   {
     key: 4,
@@ -77,7 +79,7 @@ export const sideProjects = [
       "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
     github: "https://github.com/srivastavayushi/relaxer-app",
     deployOn: "https://relaxer-project.netlify.app/",
-    video: image,
+    image: relaxer,
   },
   {
     key: 5,
@@ -87,7 +89,7 @@ export const sideProjects = [
       "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
     github: "https://github.com/srivastavayushi/relaxer-app",
     deployOn: "https://relaxer-project.netlify.app/",
-    video: image,
+    image: relaxer,
   },
   {
     key: 6,
@@ -97,6 +99,6 @@ export const sideProjects = [
       "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
     github: "https://github.com/srivastavayushi/relaxer-app",
     deployOn: "https://relaxer-project.netlify.app/",
-    video: image,
+    image: relaxer,
   },
 ];

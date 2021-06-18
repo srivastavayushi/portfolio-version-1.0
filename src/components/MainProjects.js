@@ -46,10 +46,14 @@ export default function MainProjects() {
                 >
                   <div className="h-full rounded-lg overflow-hidden bg-basic-yellow shadow-lg">
                     <video
-                      src={project.video}
-                      autoPlay={true}
                       className="lg:h-48 md:h-36 w-full object-cover object-center"
-                    />
+                      autoPlay
+                      muted
+                      controls
+                      loop
+                    >
+                      <source src={project.video} type="video/mp4" />
+                    </video>
 
                     <div className="p-6">
                       <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1 ">

@@ -15,7 +15,10 @@ export default function SideProjects() {
             {sideProjects.map((project) => {
               return (
                 <div key={project.key} className="p-4 lg:w-1/3 ">
-                  <div className="h-full bg-project-yellow  bg-opacity-30 hover:bg-opacity-80 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative shadow-lg  hover:-translate-y-1 transform transition">
+                  <div
+                    className="h-full bg-opacity-0 bg-fixed bg-contain bg-center px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative shadow-lg  hover:-translate-y-1 transform transition"
+                    style={{ backgroundImage: `url(${project.image})` }}
+                  >
                     <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">
                       {project.category}
                     </h2>

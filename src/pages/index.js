@@ -7,6 +7,7 @@ import Skills from "../components/skills";
 import MainProjects from "../components/MainProjects";
 import SideProjects from "../components/SideProjects";
 import Communities from "../components/communities";
+import Contact from "../components/contact";
 
 export default function Index() {
   return (
@@ -17,6 +18,7 @@ export default function Index() {
       <MainProjects />
       <SideProjects />
       <Communities />
+      <Contact />
     </div>
   );
 }
