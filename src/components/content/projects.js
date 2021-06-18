@@ -1,7 +1,7 @@
 import image from "../../assets/expense-tracker-1.png";
 import projectOne from "../../assets/videos/dev-connector.mp4";
 import projectTwo from "../../assets/videos/expense-tracker.mp4";
-import projectThree from "../../assets/videos/equicode-site.mov";
+import projectThree from "../../assets/videos/equicode-site.mp4";
 import relaxer from "../../assets/sideProjects/relaxer.png";
 
 export const projects = [
