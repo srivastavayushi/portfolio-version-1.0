@@ -1,58 +1,56 @@
-import React from "react";
-import image from "../assets/expense-tracker-1.png";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+import { projects } from "./content/projects";
 
 export default function MainProjects() {
-  const projects = [
-    {
-      key: 1,
-      name: "Expense Tracker",
-      category: "ReactJs Node.js MongoDB Express",
-      about:
-        "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
-      image: image,
-      github: "https://github.com/srivastavayushi/Expense-Tracker",
-      deployOn: "https://expense-tracker-full-stack.herokuapp.com/",
-    },
-    {
-      key: 2,
-      name: "Expense Tracker",
-      category: "ReactJs Node.js MongoDB Express",
-      about:
-        "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
-      image: image,
-      github: "https://github.com/srivastavayushi/Expense-Tracker",
-      deployOn: "https://expense-tracker-full-stack.herokuapp.com/",
-    },
-    {
-      key: 3,
-      name: "Expense Tracker",
-      category: "ReactJs Node.js MongoDB Express",
-      about:
-        "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
-      image: image,
-      github: "https://github.com/srivastavayushi/Expense-Tracker",
-      deployOn: "https://expense-tracker-full-stack.herokuapp.com/",
-    },
-  ];
+  const { ref, inView } = useInView({ threshold: 0.2 });
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          duration: 1.5,
+          type: "spring",
+          bounce: 0.3,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        y: 50,
+      });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [inView]);
   return (
     <>
-      <section className=" text-coolGray-100 body-font">
+      <section className="  body-font" id="projects">
         <div className="container px-5 py-8 mx-auto">
           <div className="p-4 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl py-12">
             <h2 className="text-2xl font-bold leading-none sm:text-4xl">
               Some things I've built
             </h2>
           </div>
-          <div className="flex flex-wrap -m-4">
+          <div className="flex flex-wrap -m-4" ref={ref}>
             {projects.map((project) => {
               return (
-                <div className="p-4 md:w-1/3" key={project.key}>
-                  <div className="h-full border-2 border-gray-800 rounded-lg overflow-hidden bg-coolGray-900 shadow-lg">
-                    <img
+                <motion.div
+                  className="p-4 md:w-1/3"
+                  key={project.key}
+                  animate={animation}
+                >
+                  <div className="h-full rounded-lg overflow-hidden bg-basic-yellow shadow-lg">
+                    <video
+                      src={project.video}
+                      autoPlay={true}
                       className="lg:h-48 md:h-36 w-full object-cover object-center"
-                      src={project.image}
-                      alt="blog"
                     />
+
                     <div className="p-6">
                       <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1 ">
                         {project.category}
@@ -94,7 +92,7 @@ export default function MainProjects() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>

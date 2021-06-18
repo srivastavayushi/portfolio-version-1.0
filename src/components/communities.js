@@ -1,89 +1,94 @@
 import React, { useState } from "react";
-//import Community from "./community";
-import EquiCodeLogo from "../assets/logo.png";
-import styled from "styled-components";
 
-const Tab = styled.button`
-  cursor: pointer;
-  opacity: ${(props) => (props.active ? "1" : "0.6")};
-  opacity: ${(props) => (props.active ? "1" : "0.6")}
-  border-bottom: ${(props) => (props.active ? "2px solid #8B5CF6" : "0")};
-  background-color: ${(props) => (props.active ? "#111827" : "")};
-`;
+import experience from "./content/experience";
+import cap from "../assets/cap.svg";
 
 export default function Communities() {
-  const communities = [
-    {
-      id: 1,
-      name: "EquiCode",
-      image: EquiCodeLogo,
-      about:
-        " Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.",
-    },
-    {
-      id: 2,
-      name: "EquiCode",
-      image: EquiCodeLogo,
-      about:
-        " Whatever1 cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.",
-    },
-    {
-      id: 3,
-      name: "EquiCode",
-      image: EquiCodeLogo,
-      about:
-        " Whatever2 cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.",
-    },
-    {
-      id: 4,
-      name: "EquiCode",
-      image: EquiCodeLogo,
-      about:
-        " Whatever3 cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.",
-    },
-  ];
+  const [toggleState, setToggleState] = useState(1);
 
-  const [active, setActive] = useState(communities[0]);
+  const toggleTab = (index) => {
+    setToggleState(index);
+  };
 
   return (
-    <div>
-      <section className="text-coolGray-100 body-font">
-        <div className="container px-5 py-24 mx-auto flex flex-wrap flex-col">
-          <div className="flex mx-auto flex-wrap mb-20">
-            {communities.map((community) => {
-              return (
-                <Tab
-                  key={community.id}
-                  active={active === community.id}
-                  onClick={() => setActive(community)}
-                >
-                  <a className="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium  inline-flex items-center leading-none  text-white tracking-wider rounded-t">
-                    <img
-                      src={community.image}
-                      alt=" "
-                      className="w-5 h-5 mr-3"
-                    />
-                    {community.name}
-                  </a>
-                </Tab>
-              );
-            })}
-          </div>
-          <img
-            className="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded"
-            alt="hero"
-            src="https://dummyimage.com/720x600"
-          />
-          <div className="flex flex-col text-center w-full">
-            <h1 className="text-xl font-medium title-font mb-4 text-white">
-              {active.name}
-            </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              {active.about}
-            </p>
-          </div>
+    <section className=" body-font" id="experience">
+      <div className="container px-5 py-16 mx-auto flex flex-wrap flex-col">
+        <div className="p-4 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl py-4 ">
+          <h2 className="text-2xl font-bold leading-none sm:text-4xl">
+            Work Experience
+          </h2>
         </div>
-      </section>
-    </div>
+        <div className="flex mx-auto flex-wrap mb-8">
+          {experience.map(({ key, name, logo }) => {
+            return (
+              <button
+                key={key}
+                className={
+                  toggleState === key
+                    ? "sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-4 title-font text-lg font-semibold inline-flex items-center leading-none border-basic-yellow text-basic-yellow tracking-wider rounded-t focus:outline-none pointer-events-auto"
+                    : "sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font text-lg font-semibold inline-flex items-center leading-none tracking-wider focus:outline-none pointer-events-auto"
+                }
+                onClick={() => toggleTab(key)}
+              >
+                <img src={logo} alt=" " className="w-5 h-5 mr-3" />
+
+                {name}
+              </button>
+            );
+          })}
+        </div>
+        {experience.map(({ key, jobName, work, time }) => {
+          return (
+            <div
+              key={key}
+              className={
+                toggleState === key
+                  ? "flex flex-col  w-full  "
+                  : "flex flex-col  w-full hidden "
+              }
+            >
+              <div className="w-full px-2 mt-0 sm:w-1/2 xl:w-1/2 md:w-4/5 xl:mt-0 mx-auto ">
+                <div
+                  className="relative flex items-center px-5 py-6 overflow-hidden rounded-md shadow-sm bg-basic-white
+                "
+                >
+                  <span className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-gradient-blue to-gradient-cream"></span>
+
+                  <div className="mx-5">
+                    <h4 className="text-2xl font-semibold text-basic-blue">
+                      {jobName}
+                    </h4>
+
+                    <div className="text-basic-yellow mb-4">{time}</div>
+                    <div className="flex flex-row content-center">
+                      <img
+                        src={cap}
+                        alt=" "
+                        className="h-5 w-5 mr-2 text-basic-yellow"
+                      />
+                      <div className="text-basic-blue float-right">
+                        {work.one}
+                      </div>
+                    </div>
+                    <div className="flex flex-row content-center">
+                      <img src={cap} alt=" " className="h-5 w-5 mr-2 " />
+                      <div className="text-basic-blue float-right">
+                        {work.two}
+                      </div>
+                    </div>
+                    <div className="flex flex-row content-center">
+                      <img src={cap} alt=" " className="h-5 w-5 mr-2 " />
+                      <div className="text-basic-blue float-right">
+                        {work.two}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
   );
 }

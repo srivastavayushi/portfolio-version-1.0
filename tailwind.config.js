@@ -1,37 +1,34 @@
 const colors = require("tailwindcss/colors");
+const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      height: ["hover", "focus"],
+      cursor: ["hover", "focus"],
+    },
+
     colors: {
       transparent: "transparent",
       current: "currentColor",
-      black: colors.black,
-      white: colors.white,
-      rose: colors.rose,
-      pink: colors.pink,
-      fuchsia: colors.fuchsia,
-      purple: colors.purple,
-      violet: colors.violet,
-      indigo: colors.indigo,
-      blue: colors.blue,
-      lightBlue: colors.lightBlue,
-      cyan: colors.cyan,
-      teal: colors.teal,
-      emerald: colors.emerald,
-      green: colors.green,
-      lime: colors.lime,
-      yellow: colors.yellow,
-      amber: colors.amber,
-      orange: colors.orange,
-      red: colors.red,
-      warmGray: colors.warmGray,
-      trueGray: colors.trueGray,
-      gray: colors.gray,
-      blueGray: colors.blueGray,
-      coolGray: colors.coolGray,
+      basic: {
+        white: "#ffffff",
+        gray: "#E5E5E5",
+        yellow: "#FCA311",
+        blue: "#14213D",
+        black: "#000000",
+      },
+      gradient: {
+        blue: "#4b6cb7",
+        cream: "#182848",
+        grey: {
+          dark: "#ECE9E6",
+          light: "#ffffff",
+        },
+      },
+
       language: {
         react: "#61DBFB",
         redux: "#764abc",
@@ -43,5 +40,20 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities, addComponents, e, prefix, config }) {
+      const newUtilities = {
+        ".horizontal-tb": {
+          writingMode: "horizontal-tb",
+        },
+        ".vertical-rl": {
+          writingMode: "vertical-rl",
+        },
+        ".vertical-lr": {
+          writingMode: "vertical-lr",
+        },
+      };
+      addUtilities(newUtilities);
+    }),
+  ],
 };

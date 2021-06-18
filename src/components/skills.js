@@ -6,7 +6,7 @@ import mongo from "../assets/mongo.svg";
 import Bootstrap from "../assets/bootstrap.svg";
 import Azure from "../assets/azure.svg";
 import Cpp from "../assets/icons8-c++.svg";
-import Java from "../assets/icons8-java.svg";
+//import Java from "../assets/icons8-java.svg";
 import JavaScript from "../assets/icons8-javascript.svg";
 import html from "../assets/icons8-html-5.svg";
 import css from "../assets/icons8-css3.svg";
@@ -37,7 +37,7 @@ export default function Skills() {
 
   return (
     <>
-      <section className="p-6 my-6 bg-coolGray-800 text-coolGray-100">
+      <section className="p-6 my-6  " id="skills">
         <div className="p-4 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl py-12">
           <h3 className="text-3xl font-bold leading-none sm:text-4xl">
             Languages
@@ -47,7 +47,7 @@ export default function Skills() {
           {skills.map((skill) => {
             return (
               <div
-                className="flex p-2 space-x-4 rounded-lg md:space-x-6 bg-coolGray-900 text-coolGray-100"
+                className="flex p-2 space-x-4 rounded-lg md:space-x-6 bg-basic-white text-coolGray-100"
                 key={skill.key}
               >
                 <div className="flex justify-center  align-middle rounded-lg sm:p-4 ">
@@ -74,26 +74,32 @@ export default function Skills() {
             <img
               src={redux}
               className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
+              alt=""
             />
             <img
               src={Bootstrap}
               className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
+              alt=""
             />
             <img
               src={mongo}
               className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
+              alt=""
             />
             <img
               src={npm}
               className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
+              alt=""
             />
             <img
               src={express}
               className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
+              alt=""
             />
             <img
               src={Azure}
               className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
+              alt=""
             />
             <i className="fab fa-git-alt fa-3x text-language-git mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 " />{" "}
           </div>

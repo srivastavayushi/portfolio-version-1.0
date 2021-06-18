@@ -1,24 +1,21 @@
 import React, { Fragment } from "react";
-import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 
-import Nav from "./components/nav";
-import Index from "./pages/index";
+// components
 import Routes from "./pages/routes";
-import Footer from "./components/footer";
+import Social from "./components/contact/social";
+import Email from "./components/contact/email";
+import { LineL, LineR } from "./components/contact/line";
 
 function App() {
   return (
-    <div className="bg-coolGray-800">
-      <Router>
-        <Fragment>
-          <Nav />
-          <Switch>
-            <Route exact path="/" component={Index} />
-            <Route component={Routes} />
-          </Switch>
-          <Footer />
-        </Fragment>
-      </Router>
+    <div className="bg-basic-gray">
+      <Fragment>
+        <Routes />
+        <Social />
+        <Email />
+        <LineL />
+        <LineR />
+      </Fragment>
     </div>
   );
 }
