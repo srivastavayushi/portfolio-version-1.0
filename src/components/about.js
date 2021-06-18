@@ -14,13 +14,13 @@ export default function About() {
         transition: {
           duration: 1.5,
           type: "spring",
-          bounce: 0.3,
+          bounce: 0.5,
         },
       });
     }
     if (!inView) {
       animation.start({
-        y: 100,
+        y: 30,
         opacity: 0,
       });
     }
@@ -28,14 +28,23 @@ export default function About() {
   }, [inView]);
   return (
     <div id="about">
-      <div className="min-h-full py-12 ">
+      <div className="min-h-full py-8 ">
         <section>
-          <h2 className="text-4xl font-extrabold text-center text-basic-blue ">
-            Dev Challenge
+          <h2 className="text-4xl font-extrabold text-center text-basic-blue slashed-zero mb-4">
+            02. About Me
           </h2>
-          <p className="text-center text-basic-blue text-md">
-            Follow these steps to complete the challenge.
-          </p>
+          <motion.p
+            className="text-center text-basic-blue text-md lg:max-w-2xl mx-auto sm:max-w-sm"
+            ref={ref}
+            animate={animation}
+          >
+            Hello! My name is Ayushi and I enjoy creating things that live on
+            the internet. My interest in web development started back in 2020
+            when I decided to participate in hackathons - turns out hacking that
+            summer taught me a lot about HTML & CSS! Fast-forward to today, I am
+            a full-stack developer. My main focus these days is building
+            accessible, inclusive products and digital experiences.
+          </motion.p>
           <div
             className="content-center lg:flex lg:justify-center lg:items-center "
             ref={ref}

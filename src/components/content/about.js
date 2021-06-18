@@ -12,14 +12,14 @@ const content = [
   {
     key: 2,
     name: "Design",
-    desc: "Design is how the solution will be interacted with.",
+    desc: "Design an interactive and user-friendly UI of the solution",
     image: Design,
   },
 
   {
     key: 3,
     name: "Develop",
-    desc: "Submit a developed solution to the given problem sets.",
+    desc: "Develop a full-stack web application to deliver the solution",
     image: Develop,
   },
 ];

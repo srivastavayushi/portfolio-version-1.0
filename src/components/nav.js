@@ -7,7 +7,7 @@ import Pdf from "../assets/OS.pdf";
 export default function Nav() {
   return (
     <>
-      <header className="px-4 text-basic-blue bg-basic-gray fixed w-screen z-50 pt-4">
+      <header className="px-4 text-basic-blue bg-basic-gray fixed w-screen z-50 pt-4 ">
         <div className="container flex justify-between h-16 mx-auto">
           <div className="flex">
             <Link to="/#home" className="flex items-center p-2">
@@ -106,23 +106,26 @@ export default function Nav() {
                   type: "spring",
                   stiffness: 25,
                 }}
-              >
-                <Link
-                  to="/#contact"
-                  className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent hover:text-basic-yellow hover:border-basic-yellow"
-                >
-                  Contact
-                </Link>
-              </motion.li>
+              ></motion.li>
             </ul>
           </div>
-          <div className="items-center flex-shrink-0 hidden lg:flex">
+          <motion.div
+            className="items-center flex-shrink-0 hidden lg:flex"
+            initial={{ y: -250 }}
+            animate={{ y: 0 }}
+            transition={{
+              delay: 0.5,
+              duration: 1,
+              type: "spring",
+              stiffness: 25,
+            }}
+          >
             <a href={Pdf} target="_blank" rel="noreferrer">
               <button className="px-8 py-3 font-semibold rounded border-2 border-basic-blue text-basic-blue">
                 Resume
               </button>
             </a>
-          </div>
+          </motion.div>
           <button className="p-4 lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -6,7 +6,7 @@ import mongo from "../assets/mongo.svg";
 import Bootstrap from "../assets/bootstrap.svg";
 import Azure from "../assets/azure.svg";
 import Cpp from "../assets/icons8-c++.svg";
-//import Java from "../assets/icons8-java.svg";
+import Java from "../assets/icons8-java.svg";
 import JavaScript from "../assets/icons8-javascript.svg";
 import html from "../assets/icons8-html-5.svg";
 import css from "../assets/icons8-css3.svg";
@@ -20,8 +20,8 @@ export default function Skills() {
     },
     {
       key: 2,
-      language: "CSS",
-      icon: css,
+      language: "Java",
+      icon: Java,
     },
     {
       key: 3,
@@ -30,7 +30,7 @@ export default function Skills() {
     },
     {
       key: 4,
-      language: "HTML",
+      language: "Python",
       icon: html,
     },
   ];
@@ -47,17 +47,16 @@ export default function Skills() {
           {skills.map((skill) => {
             return (
               <div
-                className="flex p-2 space-x-4 rounded-lg md:space-x-6 bg-basic-white text-coolGray-100"
+                className="flex p-2 space-x-2 rounded-lg md:space-x-6 text-basic-blue bg-basic-white"
                 key={skill.key}
               >
-                <div className="flex justify-center  align-middle rounded-lg sm:p-4 ">
+                <div className="flex justify-center align-middle rounded-lg sm:p-4 ">
                   <img src={skill.icon} alt="" />
                 </div>
                 <div className="flex flex-col justify-center align-middle">
                   <p className="text-3xl font-semibold leading-none">
                     {skill.language}
                   </p>
-                  <p className="capitalize">Orders</p>
                 </div>
               </div>
             );
@@ -65,10 +64,20 @@ export default function Skills() {
         </div>
       </section>
       {/* FRAMEWORKS AND TECHS */}
-      <section className="bg-coolGray-800 text-coolGray-100">
+      <section>
         <div className="container p-6 mx-auto space-y-6 text-center lg:p-8 lg:space-y-8">
           <h2 className="text-3xl font-bold">Libraries / Frameworks</h2>
           <div className="flex flex-wrap justify-center lg:justify-between">
+            <img
+              src={html}
+              alt=""
+              className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
+            />
+            <img
+              src={css}
+              className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
+              alt=""
+            />
             <i className="fab fa-react fa-3x text-language-react mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 " />
             <i className="fab fa-node-js fa-3x text-language-node mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 " />
             <img
