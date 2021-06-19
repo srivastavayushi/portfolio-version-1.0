@@ -1,15 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { sideProjects } from "./content/projects";
-import styled from "styled-components";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
-const ProjectCard = styled.div`
-  // background-image: url(${sideProjects});
-`;
 export default function SideProjects() {
+  const { ref, inView } = useInView({ threshold: 0.1 });
+  const animation = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          duration: 1.5,
+          type: "spring",
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        y: 20,
+        opacity: 0.5,
+      });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [inView]);
   return (
     <div>
       <section className=" body-font" id="sideprojects">
-        <div className="container px-5 py-8 mx-auto">
+        <div className="container px-28 py-8 mx-auto">
           <div className="p-4 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl py-12">
             <h2 className="text-2xl font-bold leading-none sm:text-4xl">
               Other Noteworthy Projects
@@ -18,8 +37,12 @@ export default function SideProjects() {
           <div className="flex flex-wrap -m-4">
             {sideProjects.map((project) => {
               return (
-                <div key={project.key} className="p-4 lg:w-1/3 ">
-                  <ProjectCard className="h-full bg-opacity-0 bg-fixed bg-contain bg-center px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative shadow-lg  hover:-translate-y-1 transform transition">
+                <div key={project.key} className="p-4 lg:w-1/3">
+                  <motion.div
+                    className="h-full bg-opacity-30 bg-project-yellow hover:bg-opacity-90 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative shadow-lg  hover:-translate-y-1 transform transition"
+                    ref={ref}
+                    animate={animation}
+                  >
                     <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">
                       {project.category}
                     </h2>
@@ -30,7 +53,7 @@ export default function SideProjects() {
                     <p className="leading-relaxed mb-3">{project.about}</p>
                     <a
                       className="text-purple-400 inline-flex items-center"
-                      href="/"
+                      href={project.github}
                     >
                       Learn More
                       <svg
@@ -58,7 +81,7 @@ export default function SideProjects() {
                         </a>
                       </span>
                     </div>
-                  </ProjectCard>
+                  </motion.div>
                 </div>
               );
             })}

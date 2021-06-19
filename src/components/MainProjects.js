@@ -39,12 +39,11 @@ export default function MainProjects() {
           <div className="flex flex-wrap -m-4" ref={ref}>
             {projects.map((project) => {
               return (
-                <motion.div
-                  className="p-4 md:w-1/3"
-                  key={project.key}
-                  animate={animation}
-                >
-                  <div className="h-full rounded-lg overflow-hidden bg-basic-yellow shadow-lg">
+                <motion.div className="p-4 md:w-1/3 " key={project.key}>
+                  <div
+                    className="h-full rounded-lg overflow-hidden bg-basic-yellow shadow-lg hover:-translate-y-1 transform transition"
+                    animate={animation}
+                  >
                     <video
                       className="lg:h-48 md:h-36 w-full object-cover object-center"
                       autoPlay

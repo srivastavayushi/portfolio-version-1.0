@@ -25,8 +25,8 @@ export default function Communities() {
                 key={key}
                 className={
                   toggleState === key
-                    ? "sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-4 title-font text-lg font-semibold inline-flex items-center leading-none border-basic-yellow text-basic-yellow tracking-wider rounded-t focus:outline-none pointer-events-auto"
-                    : "sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font text-lg font-semibold inline-flex items-center leading-none tracking-wider focus:outline-none pointer-events-auto"
+                    ? "sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-4 title-font text-lg font-medium inline-flex items-center leading-none border-basic-yellow text-basic-yellow tracking-wider rounded-t focus:outline-none pointer-events-auto"
+                    : "sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font text-lg font-medium inline-flex items-center leading-none tracking-wider focus:outline-none pointer-events-auto"
                 }
                 onClick={() => toggleTab(key)}
               >
@@ -52,7 +52,7 @@ export default function Communities() {
                   className="relative flex items-center px-5 py-6 overflow-hidden rounded-md shadow-sm bg-basic-white
                 "
                 >
-                  <span className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-gradient-blue to-gradient-cream"></span>
+                  <span className="absolute top-0 -left-4 w-3 h-full bg-gradient-to-b from-gradient-blue to-gradient-cream"></span>
 
                   <div className="mx-5">
                     <h4 className="text-2xl font-semibold text-basic-blue">
@@ -79,7 +79,7 @@ export default function Communities() {
                     <div className="flex flex-row content-center">
                       <img src={cap} alt=" " className="h-5 w-5 mr-2 " />
                       <div className="text-basic-blue float-right">
-                        {work.two}
+                        {work.three}
                       </div>
                     </div>
                   </div>

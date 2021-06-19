@@ -4,28 +4,29 @@ const experience = [
   {
     key: 1,
     name: "EQUICODE",
-    jobName: "Content Writer",
+    jobName: "Lead Developer",
     work: {
       one:
-        " Worked with a team of three designers to build a marketing website and e-commerce platform for blistabloc, an ambitious startup originating from Northeastern",
+        " Working with a team of 5+ developers to build the official website platform for EquiCode, an organization focusing on the holistic development of beginners",
       two:
-        " Helped solidify a brand direction for blistabloc that spans both packaging and web",
+        " Helped solidify a brand direction for EquiCode that spans both content and web",
       three:
-        " Interfaced with clients on a weekly basis, providing technological expertise",
+        " Interfaced with members on a weekly basis, providing technological expertise",
     },
-    time: "January 2021 - April 2021",
+    time: "December 2020 - Present",
     logo: EquiCodeLogo,
   },
   {
     key: 2,
-    name: "AMIHACKS",
-    jobName: "Tech Lead",
+    name: "AMIHACKS 2021",
+    jobName: "Organising Team",
     work: {
-      one: " This is the first line",
-      two: " This is the second line",
-      three: " This is the third line",
+      one:
+        "Member of organizing team of the Ami-Hacks Hackathon, a global digital hackathon which aims to push young students to provide practical and innovative solutions to real-world problems.",
+      two: "Organized over 20+ events under Amihacks.",
+      three: "",
     },
-    time: "January 2021 - April 2021",
+    time: "January 2021 - May 2021",
     logo: EquiCodeLogo,
   },
   {
@@ -33,23 +34,13 @@ const experience = [
     name: "DSC AMITY",
     jobName: "Content Writer",
     work: {
-      one: " This is the first line",
-      two: " This is the second line",
-      three: " This is the third line",
+      one:
+        "Evangelizing Google’s technologies as the Content Lead (Core Team) of our Google Developer Student Club Amity.",
+      two: "Managed 20+ events with over 60+ attendees under DSC Amity",
+      three:
+        "Building an unbiased and beginner-friendly community with over 300+ active members",
     },
-    time: "January 2021 - April 2021",
-    logo: EquiCodeLogo,
-  },
-  {
-    key: 4,
-    name: "EQUICODE",
-    jobName: "Web Developer",
-    work: {
-      one: " This is the first line",
-      two: " This is the second line",
-      three: " This is the third line",
-    },
-    time: "January 2021 - April 2021",
+    time: "August 2020 - Present",
     logo: EquiCodeLogo,
   },
 ];

@@ -21,12 +21,8 @@ module.exports = {
         black: "#000000",
       },
       gradient: {
-        blue: "#4b6cb7",
-        cream: "#182848",
-        grey: {
-          dark: "#ECE9E6",
-          light: "#ffffff",
-        },
+        blue: "#ffdd00",
+        cream: "#fbb034",
       },
       project: {
         yellow: "#EFCB95",

@@ -7,7 +7,7 @@ import Typewriter from "typewriter-effect";
 export default function Home() {
   return (
     <div id="home">
-      <section className="text-basic-blue pt-16 ">
+      <section className="text-basic-blue pt-20 ">
         <div className="container mx-auto flex flex-col justify-center p-6 sm:py-12 lg:py-24 lg:flex-row lg:justify-between ">
           <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
             <motion.h1
@@ -46,6 +46,15 @@ export default function Home() {
                     .pauseFor(1000)
                     .deleteAll()
                     .typeString("Java")
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("HTML")
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("CSS")
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("React.Js")
                     .pauseFor(1000)
                     .deleteAll()
                     .typeString("Python")
@@ -87,9 +96,7 @@ export default function Home() {
             >
               I'm a self-taught MERN Stack developer who specializes in building
               exceptional web applications.
-              <br className="hidden md:inline lg:hidden" />
               <motion.span
-                className="mt-6 text-lg "
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
@@ -99,14 +106,14 @@ export default function Home() {
                   stiffness: 25,
                 }}
               >
-                &nbsp;Currently, I'm learning Redux and focussing on building
-                highly interactive and user-friendly products.
+                Currently, I'm learning Redux and focussing on building highly
+                interactive and user-friendly products.
               </motion.span>
             </motion.p>
 
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <motion.a
-                href="/"
+                href="https://www.linkedin.com/in/srivayushi/"
                 className="px-8 py-3 text-lg font-semibold rounded bg-basic-yellow text-basic-blue"
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
