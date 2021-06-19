@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div className=" w-screen">
+    <div className=" w-screen" id="contact">
       <h2 className="text-4xl font-extrabold text-center text-basic-blue slashed-zero mb-4">
         02. Contact Me
       </h2>
