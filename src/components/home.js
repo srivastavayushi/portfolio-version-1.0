@@ -7,7 +7,7 @@ import Typewriter from "typewriter-effect";
 export default function Home() {
   return (
     <div id="home">
-      <section className="text-basic-blue pt-20 ">
+      <section className="text-basic-blue pt-20 w-full ">
         <div className="container mx-auto flex flex-col justify-center p-6 sm:py-12 lg:py-24 lg:flex-row lg:justify-between ">
           <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
             <motion.h1

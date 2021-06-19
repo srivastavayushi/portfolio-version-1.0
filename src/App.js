@@ -8,7 +8,7 @@ import { LineL, LineR } from "./components/contact/line";
 
 function App() {
   return (
-    <div className="bg-basic-gray">
+    <div className="bg-basic-gray w-screen">
       <Fragment>
         <Routes />
         <Social />
