@@ -2,7 +2,7 @@ import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { motion } from "framer-motion";
 import logo from "../assets/logo.svg";
-import Pdf from "../assets/OS.pdf";
+import Pdf from "../assets/resume-website.pdf";
 import Sidebar from "./sidebar/sidebar";
 
 export default function Nav() {
