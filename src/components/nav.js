@@ -140,7 +140,7 @@ export default function Nav() {
             }}
           >
             <a href={Pdf} target="_blank" rel="noreferrer">
-              <button className="px-8 py-3 font-semibold rounded border-2 border-basic-blue text-basic-blue">
+              <button className="px-8 py-3 font-semibold rounded border-2 border-basic-blue text-basic-blue outline-none">
                 Resume
               </button>
             </a>
