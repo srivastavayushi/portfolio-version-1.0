@@ -75,7 +75,7 @@ export default function SideProjects() {
                           <i className="fab fa-github fa-lg text-coolGray-400 w-4 h-4 mr-1" />
                         </a>
                       </span>
-                      <span className="text-gray-500 inline-flex items-center leading-none text-sm">
+                      <span className="text-gray-500 inline-flex items-center leading-none text-sm ml-0">
                         <a href={project.deployOn}>
                           <i className="far fa-browser fa-lg text-coolGray-400 w-4 h-4 mr-1" />
                         </a>

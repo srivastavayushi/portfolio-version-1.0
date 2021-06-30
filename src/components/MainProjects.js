@@ -39,7 +39,7 @@ export default function MainProjects() {
           <div className="flex flex-wrap -m-4" ref={ref}>
             {projects.map((project) => {
               return (
-                <motion.div className="p-4 md:w-1/3 " key={project.key}>
+                <motion.div className="p-4 md:w-2/4 md:mx-auto xl:w-1/3 2xl:w-1/3 sm:w-2/3 sm:mx-auto" key={project.key}>
                   <div
                     className="h-full rounded-lg overflow-hidden bg-basic-yellow shadow-lg hover:-translate-y-1 transform transition"
                     animate={animation}
@@ -63,33 +63,14 @@ export default function MainProjects() {
                       </h1>
                       <p className="leading-relaxed mb-3">{project.about}</p>
                       <div className="flex items-center flex-wrap ">
-                        <a
-                          className="text-purple-400 inline-flex items-center md:mb-2 lg:mb-0"
-                          href="/"
-                        >
-                          Learn More
-                          <svg
-                            className="w-4 h-4 ml-2"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            fill="none"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          >
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5l7 7-7 7"></path>
-                          </svg>
-                        </a>
                         <span className="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-800">
                           <a href={project.github}>
                             <i className="fab fa-github fa-lg text-coolGray-400 w-4 h-4 mr-1" />
                           </a>
                         </span>
-                        <span className="text-gray-500 inline-flex items-center leading-none text-sm">
+                        <span className="text-gray-500 inline-flex items-center leading-none text-sm ml-0">
                           <a href={project.deployOn}>
-                            {" "}
-                            <i className="far fa-browser fa-lg text-coolGray-400 w-4 h-4 mr-1" />
+                            <i className="far fa-browser fa-lg text-coolGray-400 w-4 h-4 text-center" />
                           </a>
                         </span>
                       </div>

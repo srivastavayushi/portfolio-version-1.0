@@ -52,14 +52,14 @@ export default function About() {
             {content.map((cont) => {
               return (
                 <motion.div
-                  className="flex justify-center pt-10 m-auto lg:w-1/4 lg:mx-4 lg:my-8 "
+                  className="flex justify-center pt-10 m-auto lg:w-1/4 lg:mx-6 lg:my-8 ml-0"
                   animate={animation}
                   key={cont.key}
                 >
                   <div className="relative w-64 h-48">
-                    <div className="absolute top-0 left-0 flex items-center w-72 h-40 mt-6 ml-6 bg-basic-white border-8 border-gray-700 border-solid rounded-lg shadow-lg transition duration-500 ease-in-out transform hover:h-48 hover:shadow-2xl">
+                    <div className="absolute top-0 left-0 flex items-center w-64 h-40 mt-6 ml-6 bg-basic-white border-8 border-gray-700 border-solid rounded-lg shadow-lg transition duration-500 ease-in-out transform hover:shadow-2xl">
                       <div className="w-1/3 h-40"></div>
-                      <div className="w-2/3 h-32 pr-2">
+                      <div className="w-2/3 h-32 pr-4">
                         <h3 className="pt-1 text-xl font-semibold ">
                           {cont.name}
                         </h3>
@@ -72,7 +72,7 @@ export default function About() {
                     <div className="absolute top-0 left-0 z-10 w-24 h-40 py-20 text-5xl font-bold text-center text-white bg-basic-yellow rounded-lg">
                       {cont.key}
                     </div>
-                    <div className="absolute top-0 left-0 z-30 w-32 h-2 mt-40 ml-48 bg-basic-yellow"></div>
+                    <div className="absolute top-0 left-0 z-30 w-24 h-2 mt-40 ml-48 bg-basic-yellow"></div>
                   </div>
                 </motion.div>
               );

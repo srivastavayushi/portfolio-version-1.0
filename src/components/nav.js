@@ -8,7 +8,7 @@ import Sidebar from "./sidebar/sidebar";
 export default function Nav() {
   return (
     <>
-      <header className="px-4 text-basic-blue bg-basic-gray fixed z-50 pt-4 w-full">
+      <header className="px-4 text-basic-blue bg-basic-gray fixed z-50 pt-2 w-full">
         <div className="container flex justify-between h-16 mx-auto">
           <div className="flex">
             <Link to="/#home" className="flex items-center p-2">

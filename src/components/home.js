@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <div id="home">
       <section className="text-basic-blue pt-20 w-full ">
-        <div className="container mx-auto flex flex-col justify-center p-6 sm:py-12 lg:py-24 lg:flex-row lg:justify-between ">
+        <div className="container mx-auto flex flex-col justify-center p-6 sm:py-12 lg:py-24 lg:flex-row lg:justify-center ">
           <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-            <motion.h1
-              className="text-5xl font-bold leading-none sm:text-6xl "
+            <motion.div
+              className="text-5xl font-bold leading-none sm:text-6xl flex flex-row justify-left"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{
@@ -21,7 +21,7 @@ export default function Home() {
                 stiffness: 25,
               }}
             >
-              Hey,&nbsp; I'm
+             <span className="ml-0">Hey,&nbsp;I'm</span> 
               <motion.span
                 className="text-basic-yellow"
                 initial={{ y: 20, opacity: 0 }}
@@ -33,9 +33,11 @@ export default function Home() {
                   stiffness: 25,
                 }}
               >
-                &nbsp;Ayushi
+                Ayushi
               </motion.span>
-              <br />I speak
+              </motion.div>
+              <br /><div className="flex flex-row justify-left text-5xl font-bold leading-none sm:text-6xl">I 
+              <p>&nbsp;speak</p>
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter
@@ -62,9 +64,11 @@ export default function Home() {
                     .start();
                 }}
               />
-            </motion.h1>
+              </div>
+       
+            
             <motion.p
-              className="mt-10 text-lg font-mono font-thin tracking-wide"
+              className="mt-4 text-lg font-mono font-thin tracking-wide text-left"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{
@@ -84,7 +88,7 @@ export default function Home() {
               !
             </motion.p>
             <motion.p
-              className="mt-6 mb-8 text-lg sm:mb-12 "
+              className="mt-6 mb-2 text-lg sm:mb-8 "
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{
@@ -97,6 +101,7 @@ export default function Home() {
               I'm a self-taught MERN Stack developer who specializes in building
               exceptional web applications.
               <motion.span
+              className="ml-1"
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
@@ -105,13 +110,12 @@ export default function Home() {
                   type: "spring",
                   stiffness: 25,
                 }}
-              >
-                Currently, I'm learning Redux and focussing on building highly
+              >Currently, I'm learning Redux and focussing on building highly
                 interactive and user-friendly products.
               </motion.span>
             </motion.p>
 
-            <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+            <div className="flex flex-col space-y-2 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <motion.a
                 href="https://www.linkedin.com/in/srivayushi/"
                 className="px-8 py-3 text-lg font-semibold rounded bg-basic-yellow text-basic-blue"
@@ -139,12 +143,13 @@ export default function Home() {
                 }}
               >
                 <div>
+                Github
                   <img
                     src={github}
                     alt="github"
-                    className="float-right mx-1 text-basic-blue"
+                    className="float-right ml-2 text-basic-blue"
                   />
-                  Github
+                  
                 </div>
               </motion.a>
             </div>
