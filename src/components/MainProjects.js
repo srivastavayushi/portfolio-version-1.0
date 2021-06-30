@@ -29,8 +29,8 @@ export default function MainProjects() {
   }, [inView]);
   return (
     <>
-      <section className="body-font w-full" id="projects">
-        <div className="container px-5 py-8 mx-auto">
+      <section className="body-font w-full px-3" id="projects">
+        <div className="container px-8 py-8 mx-auto">
           <div className="p-4 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl py-12">
             <h2 className="text-2xl font-bold leading-none sm:text-4xl">
               Some things I've built

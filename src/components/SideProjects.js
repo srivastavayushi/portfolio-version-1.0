@@ -28,7 +28,7 @@ export default function SideProjects() {
   return (
     <div>
       <section className=" body-font" id="sideprojects">
-        <div className="container px-5 py-8 mx-auto">
+        <div className="container px-8 py-8 mx-auto">
           <div className="p-4 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl py-12">
             <h2 className="text-2xl font-bold leading-none sm:text-4xl">
               Other Noteworthy Projects
