@@ -145,7 +145,7 @@ export default function Nav() {
               </button>
             </a>
           </motion.div>
-          <button className="p-4 lg:hidden">
+          <button className="lg:hidden">
             <Sidebar />
           </button>
         </div>
