@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact() {
   const email = "ayushi.srivastava18@student.amity.edu";
   return (
-    <div className="w-screen" id="contact">
+    <div className="w-full" id="contact">
       <h2 className="text-4xl font-extrabold text-center text-basic-blue slashed-zero mb-4">
         Contact Me
       </h2>
