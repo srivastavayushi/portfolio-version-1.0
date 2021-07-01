@@ -34,7 +34,7 @@ export default function About() {
             02. About Me
           </h2>
           <motion.p
-            className="text-center text-basic-blue text-md lg:max-w-2xl mx-auto sm:max-w-sm p-4"
+            className="text-center text-basic-blue text-md lg:max-w-2xl mx-auto sm:max-w-md md:max-w-md md:p-0 p-4"
             ref={ref}
             animate={animation}
           >

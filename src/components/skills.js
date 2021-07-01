@@ -37,13 +37,13 @@ export default function Skills() {
 
   return (
     <>
-      <section className="p-6 my-6  " id="skills">
+      <section className="p-6 my-6" id="skills">
         <div className="p-4 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl py-12">
           <h3 className="text-3xl font-bold leading-none sm:text-4xl">
             Languages
           </h3>
         </div>
-        <div className="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4">
+        <div className="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4 md:grid-cols-2">
           {skills.map((skill) => {
             return (
               <div

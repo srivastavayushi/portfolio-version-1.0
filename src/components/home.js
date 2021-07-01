@@ -21,7 +21,7 @@ export default function Home() {
                 stiffness: 25,
               }}
             >
-             <span className="ml-0">Hey,&nbsp;I'm</span> 
+             <span>Hey,&nbsp;I'm</span> 
               <motion.span
                 className="text-basic-yellow"
                 initial={{ y: 20, opacity: 0 }}
@@ -33,11 +33,19 @@ export default function Home() {
                   stiffness: 25,
                 }}
               >
-                Ayushi
+                &nbsp;Ayushi
               </motion.span>
               </motion.div>
-              <br /><div className="flex flex-row justify-left text-5xl font-bold leading-none sm:text-6xl">I 
-              <p>&nbsp;speak</p>
+              <br /><motion.div initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 1.7,
+                  duration: 0.5,
+                  type: "spring",
+                  stiffness: 25,
+                }}
+              className="flex flex-row justify-left text-5xl font-bold leading-none sm:text-6xl">I 
+              <p>&nbsp;speak&nbsp;</p>
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter
@@ -64,7 +72,7 @@ export default function Home() {
                     .start();
                 }}
               />
-              </div>
+              </motion.div>
        
             
             <motion.p
@@ -101,7 +109,7 @@ export default function Home() {
               I'm a self-taught MERN Stack developer who specializes in building
               exceptional web applications.
               <motion.span
-              className="ml-1"
+            
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
