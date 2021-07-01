@@ -9,9 +9,9 @@ export default function Home() {
     <div id="home">
       <section className="text-basic-blue pt-20 w-full ">
         <div className="container mx-auto flex flex-col justify-center p-6 sm:py-12 lg:py-24 lg:flex-row lg:justify-center ">
-          <div className="flex flex-col justify-center p-0 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+          <div className="flex flex-col justify-center p-4 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
             <motion.div
-              className="text-5xl font-bold leading-none sm:text-6xl flex flex-row justify-left"
+              className="text-5xl font-bold leading-none sm:text-6xl flex flex-row flex-wrap xl:justify-start justify-center"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{
@@ -44,9 +44,10 @@ export default function Home() {
                   type: "spring",
                   stiffness: 25,
                 }}
-              className="flex flex-row justify-left text-5xl font-bold leading-none sm:text-6xl">I 
+              className="flex flex-row flex-wrap xl:justify-start text-5xl font-bold leading-none justify-center">I 
               <p>&nbsp;speak&nbsp;</p>
               <Typewriter
+          
                 onInit={(typewriter) => {
                   typewriter
                     .typeString("JavaScript")
@@ -76,7 +77,7 @@ export default function Home() {
        
             
             <motion.p
-              className="mt-4 text-lg font-mono font-thin tracking-wide text-left"
+              className="mt-4 text-lg font-mono font-thin tracking-wide xl:text-left md:text-center sm:text-center"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{

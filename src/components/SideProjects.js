@@ -4,23 +4,22 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export default function SideProjects() {
-  const { ref, inView } = useInView({ threshold: 0.1 });
+  const { ref, inView } = useInView({ threshold: 0.3 });
   const animation = useAnimation();
   useEffect(() => {
     if (inView) {
       animation.start({
         y: 0,
-        opacity: 1,
         transition: {
-          duration: 1.5,
+          duration: 0.5,
           type: "spring",
+          bounce: 0.5,
         },
       });
     }
     if (!inView) {
       animation.start({
-        y: 20,
-        opacity: 0.5,
+        y: 30,     
       });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps

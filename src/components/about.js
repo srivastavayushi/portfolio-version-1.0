@@ -46,17 +46,17 @@ export default function About() {
             accessible, inclusive products and digital experiences.
           </motion.p>
           <div
-            className="content-center lg:flex lg:justify-center lg:items-center "
+            className="content-center lg:flex lg:justify-center lg:items-center"
             ref={ref}
           >
             {content.map((cont) => {
-              return (
+              return (  
                 <motion.div
                   className="flex justify-center pt-10 m-auto lg:w-1/4 lg:mx-6 lg:my-8 ml-0"
                   animate={animation}
                   key={cont.key}
                 >
-                  <div className="relative w-64 h-48">
+                  <div className="relative w-72 h-48">
                     <div className="absolute top-0 left-0 flex items-center w-64 h-40 mt-6 ml-6 bg-basic-white border-8 border-gray-700 border-solid rounded-lg shadow-lg transition duration-500 ease-in-out transform hover:shadow-2xl">
                       <div className="w-1/3 h-40"></div>
                       <div className="w-2/3 h-32 pr-4">
@@ -75,6 +75,7 @@ export default function About() {
                     <div className="absolute top-0 left-0 z-30 w-24 h-2 mt-40 ml-48 bg-basic-yellow"></div>
                   </div>
                 </motion.div>
+              
               );
             })}
           </div>
