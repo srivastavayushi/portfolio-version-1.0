@@ -42,32 +42,14 @@ export default function SideProjects() {
                     ref={ref}
                     animate={animation}
                   >
-                    <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">
+                    <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1 bg-basic-yellowLight text-basic-blue p-2 rounded-md">
                       {project.category}
                     </h2>
-                    <h1 className="title-font sm:text-2xl text-xl font-medium text-white mb-3">
+                    <h1 className="title-font sm:text-2xl text-xl font-medium text-white m-3">
                       {project.name}
                     </h1>
 
                     <p className="leading-relaxed mb-3">{project.about}</p>
-                    <a
-                      className="text-purple-400 inline-flex items-center"
-                      href={project.github}
-                    >
-                      Learn More
-                      <svg
-                        className="w-4 h-4 ml-2"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
                     <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
                       <span className="text-gray-500 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-700 border-opacity-50">
                         <a href={project.github}>

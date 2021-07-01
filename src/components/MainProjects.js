@@ -55,7 +55,7 @@ export default function MainProjects() {
                     </video>
 
                     <div className="p-6">
-                      <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1 ">
+                      <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1 bg-basic-yellowLight text-basic-blue p-2 rounded-md">
                         {project.category}
                       </h2>
                       <h1 className="title-font text-lg font-medium text-white mb-3">

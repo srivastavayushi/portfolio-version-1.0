@@ -31,7 +31,7 @@ export default function About() {
       <div className="min-h-full py-8 ">
         <section>
           <h2 className="text-4xl font-extrabold text-center text-basic-blue slashed-zero mb-4">
-            02. About Me
+            About Me
           </h2>
           <motion.p
             className="text-center text-basic-blue text-md lg:max-w-2xl mx-auto sm:max-w-md md:max-w-md md:p-0 p-4"

@@ -1,6 +1,6 @@
 import image from "../../assets/expense-tracker-1.png";
 import projectOne from "../../assets/videos/dev-connector.mp4";
-import projectTwo from "../../assets/videos/expense-tracker.mp4";
+import projectTwo from "../../assets/videos/codered.mp4";
 import projectThree from "../../assets/videos/equicode-site.mp4";
 import relaxer from "../../assets/sideProjects/relaxer.png";
 
@@ -8,7 +8,7 @@ export const projects = [
   {
     key: 1,
     name: "Dev Connector",
-    category: "ReactJs | Node.js | MongoDB | Express | Redux | Github API",
+    category: "React.js | Node.js | MongoDB | Express | Redux | Github API",
     about:
       "A social network for developers. Small posts can be created that contain a feature of likes and commenting on other user’s posts. Github API is used to fetch last 5 updated repositories of the user.",
     image: image,
@@ -18,19 +18,19 @@ export const projects = [
   },
   {
     key: 2,
-    name: "Wallet Manager",
-    category: "ReactJs | Node.js | MongoDB | Express | Redux",
+    name: "CodeRED",
+    category: "React.js | Node.js | MongoDB | Express | Google Maps API | Auth0",
     about:
-      "A basic CRUD application which tracks down the expenses with a short description. Displays the total income, expenditure and total amount left in the wallet.",
+      "CodeRED aims to provide quick and nearby access to sanitary napkins and toilets in all parts of the world by creating a map of all stores and restrooms and incentivising users to add their own restrooms or stores to the map. Google Maps API is used to help users locate nearest store or restrooms during emergency using browser’s geolocation.",
     image: image,
     video: projectTwo,
-    github: "https://github.com/srivastavayushi/Expense-Tracker",
-    deployOn: "https://expense-tracker-full-stack.herokuapp.com/",
+    github: "https://github.com/kaustuvkaran01/CodeRED",
+    deployOn: "https://fathomless-anchorage-82136.herokuapp.com/",
   },
   {
     key: 3,
     name: "EquiCode",
-    category: "ReactJs | TailwindCSS | Google Sheets API",
+    category: "React.js | TailwindCSS | Google Sheets API",
     about:
       "Official website of EquiCode, a community focusing on the holistic development of beginners. Google Sheets API to adds details of attendees to organisation's database. TailwindCSS is used to enhance User Interface and make it user-friendly.",
     image: image,
@@ -43,7 +43,7 @@ export const projects = [
 export const sideProjects = [
   {
     key: 1,
-    category: "ReactJs Express Redux Google Maps API MongoDB",
+    category: "React.js Express Redux Google Maps API MongoDB",
     name: "Volunteer Up",
     about:
       "Application developed for volunteers to connect and use Maps API track down stray animals in need.",
@@ -53,7 +53,7 @@ export const sideProjects = [
   },
   {
     key: 2,
-    category: "ReactJs Breaking Bad API",
+    category: "React.js Breaking Bad API",
     name: "Breaking Bad Cast",
     about:
       "Basic React App that uses the breaking bad api to show and filter characters from the show",

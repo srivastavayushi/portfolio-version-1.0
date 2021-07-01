@@ -19,6 +19,7 @@ module.exports = {
         yellow: "#FCA311",
         blue: "#14213D",
         black: "#000000",
+        yellowLight : '#fada5e'
       },
       gradient: {
         blue: "#ffdd00",
