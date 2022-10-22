@@ -1,119 +1,26 @@
-import React from "react";
-import redux from "../assets/redux.svg";
-import express from "../assets/express.svg";
-import npm from "../assets/npm.svg";
-import mongo from "../assets/mongo.svg";
-import Bootstrap from "../assets/bootstrap.svg";
-import Azure from "../assets/azure.svg";
-import Cpp from "../assets/icons8-c++.svg";
-import Java from "../assets/icons8-java.svg";
-import JavaScript from "../assets/icons8-javascript.svg";
-import html from "../assets/icons8-html-5.svg";
-import css from "../assets/icons8-css3.svg";
-
 export default function Skills() {
-  const skills = [
-    {
-      key: 1,
-      language: "C++",
-      icon: Cpp,
-    },
-    {
-      key: 2,
-      language: "Java",
-      icon: Java,
-    },
-    {
-      key: 3,
-      language: "JavaScript",
-      icon: JavaScript,
-    },
-    {
-      key: 4,
-      language: "Python",
-      icon: html,
-    },
-  ];
-
+  const skill = ["https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white",
+                  "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white",
+                "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E",
+              "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white",
+            "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
+              "https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white",
+            "https://img.shields.io/badge/-React%20Query-FF4154?style=for-the-badge&logo=react%20query&logoColor=white",
+            "https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white",
+            "https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white",
+            "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white",
+            "https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white",
+            "https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"]
   return (
-    <>
-      <section className="p-6 my-6" id="skills">
-        <div className="p-4 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl py-12">
+      <section className="p-6" id="skills">
+        <div className="p-4 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl pb-6">
           <h3 className="text-3xl font-bold leading-none sm:text-4xl">
-            Languages
+            Skills
           </h3>
         </div>
-        <div className="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4 md:grid-cols-2">
-          {skills.map((skill) => {
-            return (
-              <div
-                className="flex p-2 space-x-2 rounded-lg md:space-x-6 text-basic-blue bg-basic-white"
-                key={skill.key}
-              >
-                <div className="flex justify-center align-middle rounded-lg sm:p-4 ">
-                  <img src={skill.icon} alt="" />
-                </div>
-                <div className="flex flex-col justify-center align-middle">
-                  <p className="text-3xl font-semibold leading-none">
-                    {skill.language}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
+        <div className="flex flex-wrap justify-center items-center gap-2 max-w-3xl mx-auto">
+          {skill.map(ele => <img src={ele} alt=""/>)}
         </div>
       </section>
-      {/* FRAMEWORKS AND TECHS */}
-      <section>
-        <div className="container p-6 mx-auto space-y-6 text-center lg:p-8 lg:space-y-8">
-          <h2 className="text-3xl font-bold">Libraries / Frameworks</h2>
-          <div className="flex flex-wrap justify-center lg:justify-between">
-            <img
-              src={html}
-              alt=""
-              className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
-            />
-            <img
-              src={css}
-              className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
-              alt=""
-            />
-            <i className="fab fa-react fa-3x text-language-react mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 " />
-            <i className="fab fa-node-js fa-3x text-language-node mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 " />
-            <img
-              src={redux}
-              className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
-              alt=""
-            />
-            <img
-              src={Bootstrap}
-              className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
-              alt=""
-            />
-            <img
-              src={mongo}
-              className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
-              alt=""
-            />
-            <img
-              src={npm}
-              className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
-              alt=""
-            />
-            <img
-              src={express}
-              className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
-              alt=""
-            />
-            <img
-              src={Azure}
-              className=" mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 "
-              alt=""
-            />
-            <i className="fab fa-git-alt fa-3x text-language-git mx-10 my-6 fill-current md:mx-12 lg:m-0 w-12 h-12 " />{" "}
-          </div>
-        </div>
-      </section>
-    </>
   );
 }

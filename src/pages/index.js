@@ -14,10 +14,10 @@ export default function Index() {
     <div>
       <Home />
       <About />
+      <Communities />
       <Skills />
       <MainProjects />
       <SideProjects />
-      <Communities />
       <Contact />
     </div>
   );
