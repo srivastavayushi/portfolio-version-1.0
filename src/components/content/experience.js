@@ -15,7 +15,7 @@ const experience = [
     },
     description:
       "Worked in Prime Video Payments Team for replacing the current widget stack inside Pay Select Page. Achieved third party redirection for payment authorisation and reduced chances of customer drop off during subscription renewal. Implemented dynamic price upgradation in Prime Video’s main landing page for 23 marketplaces. Saved 20 working hours of an SDE at every price upgrade and mitigated inconsistencies resulting from manual updgrade process. Worked on migrating a service from MAWS to Native AWS, collaborating with 10+ teams for onboarding. Built CDK package from scratch enabling service and deployment stages configurations using code as an infrastructure.",
-    date: "July 2021 - Sept 2021",
+    date: "January 2023 - July 2023",
     icon: <IoIcons.IoMdChatboxes />,
     technology: [
       "https://img.shields.io/badge/Amazon%20Prime-0F79AF?style=for-the-badge&logo=amazonprime&logoColor=white",
